@@ -81,7 +81,8 @@ If you think you have discovered a security issue in our code, please do not cre
 
 - Project's home: https://github.com/vivazzi/mql_unit_test
 - Report bugs and suggest improvements: https://github.com/vivazzi/mql_unit_test/issues
-
+- Author's site, Artem Maltsev: https://vivazzi.pro
+    
 # LICENCE
 
 Copyright © 2021 Artem Maltsev and contributors.
