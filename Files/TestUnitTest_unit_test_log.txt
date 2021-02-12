@@ -1,0 +1,2 @@
+--- 2021.02.12 16:17: Unit Test: passed tests 3 from 4 (elapsed time: 0 sec) ---
+TestUnitTest.mq4(17), MyTest::test_string_len(): 11 != 5
