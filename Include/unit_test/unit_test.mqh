@@ -1,7 +1,7 @@
 #property copyright     "Copyright © 2021 Artem Maltsev (Vivazzi)"
 #property link          "https://vivazzi.pro"
 #property version		"1.00"
-#property description   "Unit test is a simple instrument for unit testing."
+#property description   "mql_unit_test is a simple instrument for unit testing."
 #property library
 
 #define assert_equal(v_1, v_2) _assert_equal(__FILE__, __FUNCTION__, __LINE__, (v_1), (v_2))
