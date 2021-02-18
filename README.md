@@ -13,6 +13,12 @@ Create expert with a name, for example, MyExpert:
 ```mql4
 #include "lib/unit_test.mqh"
 
+double min(double v_1, double v_2) {
+    if (v_1 > v_2) return v_2
+    
+    return v_1
+}
+
 class MyTest : public TestCase {
     void test_math_abs() {
         assert_equal_d(MathAbs(-1.25), 1.25);
@@ -24,9 +30,16 @@ class MyTest : public TestCase {
         assert_equal(StringLen("some string"), 5);  // test fails
     }
     
+    void test_my_function_min() {
+        assert_equal(min(4, 10), 4);
+        assert_equal(min(8, 1), 1);
+        assert_equal(min(5, 0), 5);  // test fails
+    }
+    
     void declare_tests() {
         test_math_abs();
         test_string_len();
+        test_my_function_min();
     }
 }
 
@@ -39,11 +52,14 @@ int OnInit(){
 }
 ```
 
+You can use any name of your test methods. In most language name of test methods start with `test_`. All test methods must be listed in declare_tests() of your test class.
+
 Compile and run this your expert in terminal in a window of any trading pair and look test result in "\<TERMINAL DIR>/Files/MyExpert_unit_test_log.txt".
 In log file you can see something like:
 ```
---- 2021.02.12 16:17: Unit Test: passed tests 3 from 4 (elapsed time: 0 sec) ---
-MyExpert.mq4(17), MyTest::test_string_len(): 11 != 5
+--- 2021.02.18 15:53: Unit Test: passed tests 5 from 7 (elapsed time: 0 sec) ---
+MyExpert.mq4(24), MyTest::test_string_len(): 11 != 5
+MyExpert.mq4(30), MyTest::test_my_function_min(): 0 != 5
 ```
 
 In log file you can see next information:
