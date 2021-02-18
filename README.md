@@ -4,7 +4,7 @@ mql_unit_test package is a simple instrument for unit testing for mql language.
 
 ## Installing
 
-Download repo and copy "mql_unit_test/Include/unit_test" folder to <TERMINAL DIR>/MQL(4/5)/Include
+Download repo and copy "mql_unit_test/Include/unit_test" folder to "\<TERMINAL DIR>/MQL(4/5)/Include"
 
 ## Usage
 
