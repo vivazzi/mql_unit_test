@@ -4,11 +4,11 @@ mql_unit_test package is a simple instrument for unit testing for mql language.
 
 ## Installing
 
-Download repo and copy "mql_unit_test/Include/unit_test" folder to "\<TERMINAL DIR>/MQL(4/5)/Include"
+Download repo and copy `mql_unit_test/Include/unit_test` folder to `<TERMINAL DIR>/MQL(4/5)/Include`
 
 ## Usage
 
-Create expert with a name, for example, MyExpert:
+Create expert with a name, for example, `MyExpert`:
 
 ```mql4
 #include "lib/unit_test.mqh"
@@ -52,9 +52,9 @@ int OnInit(){
 }
 ```
 
-You can use any name of your test methods. In most language name of test methods start with `test_`. All test methods must be listed in declare_tests() of your test class.
+You can use any name of your test methods. In most language name of test methods start with `test_`. All test methods must be listed in `declare_tests()` of your test class.
 
-Compile and run this your expert in terminal in a window of any trading pair and look test result in "\<TERMINAL DIR>/Files/MyExpert_unit_test_log.txt".
+Compile and run this your expert in terminal in a window of any trading pair and look test result in `<TERMINAL DIR>/Files/MyExpert_unit_test_log.txt`.
 In log file you can see something like:
 ```
 --- 2021.02.18 15:53: Unit Test: passed tests 5 from 7 (elapsed time: 0 sec) ---
@@ -69,7 +69,7 @@ In log file you can see next information:
 - elapsed time,
 - list of failed tests.
 
-To change a name fo log file, use method set_output_file_path():
+To change a name fo log file, use method `set_output_file_path()`:
 
 ```mql4
 MyTest my_test;
@@ -79,9 +79,9 @@ my_test.run();
 
 ## Run test of Unit test
 
-1. Copy "mql_unit_test/Experts/TestUnitTest.mq4" to "\<TERMINAL DIR>/MQL(4/5)/Experts"
-2. Compile TestUnitTest.mq4 and run TestUnitTest.ex4 in terminal in a window of any trading pair.
-3. Look test result in "\<TERMINAL DIR>/Files/TestUnitTest_unit_test_log.txt"
+1. Copy `mql_unit_test/Experts/TestUnitTest.mq4` to `<TERMINAL DIR>/MQL(4/5)/Experts`
+2. Compile `TestUnitTest.mq4` and run `TestUnitTest.ex4` in terminal in a window of any trading pair.
+3. Look test result in `<TERMINAL DIR>/Files/TestUnitTest_unit_test_log.txt`
 
 # CONTRIBUTING
 
