@@ -21,8 +21,8 @@ double min(double v_1, double v_2) {
 
 class MyTest : public TestCase {
     void test_math_abs() {
-        assert_equal_d(MathAbs(-1.25), 1.25);
-        assert_equal_d(MathAbs(2.15), 2.15);
+        assert_equal(MathAbs(-1.25), 1.25);
+        assert_equal(MathAbs(2.15), 2.15);
     }
     
     void test_string_len() {
