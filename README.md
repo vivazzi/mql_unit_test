@@ -11,7 +11,7 @@ Download repo and copy `mql_unit_test/Include/unit_test` folder to `<TERMINAL DI
 Create expert with a name, for example, `MyExpert`:
 
 ```mql4
-#include "lib/unit_test.mqh"
+#include <unit_test/unit_test.mqh>
 
 double min(double v_1, double v_2) {
     if (v_1 > v_2) return v_2
