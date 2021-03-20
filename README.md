@@ -11,7 +11,7 @@ Download repo and copy `mql_unit_test/Include/unit_test.mqh` folder to `<TERMINA
 Create expert with a name, for example, `MyExpert`:
 
 ```mql4
-#include "lib/unit_test.mqh"
+#include <unit_test/unit_test.mqh>
 
 double min(double v_1, double v_2) {
     if (v_1 > v_2) return v_2
@@ -21,8 +21,8 @@ double min(double v_1, double v_2) {
 
 class MyTest : public TestCase {
     void test_math_abs() {
-        assert_equal_d(MathAbs(-1.25), 1.25);
-        assert_equal_d(MathAbs(2.15), 2.15);
+        assert_equal(MathAbs(-1.25), 1.25);
+        assert_equal(MathAbs(2.15), 2.15);
     }
     
     void test_string_len() {
